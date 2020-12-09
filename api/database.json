@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "email": "test@test.com",
+            "password": "test",
+            "name": "Test Testerson",
+            "id": 3
+        }
+    ],
+
+    "habits": [
+        {
+
+        }
+    ],
+
+    "completedHabits": [
+        {
+            
+        }
+    ]
+}
