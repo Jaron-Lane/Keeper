@@ -3,6 +3,7 @@ import { Route, Redirect } from "react-router-dom"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
 import { NavBar } from "./components/navbar/NavBar";
+import { ApplicationViews } from "./components/ApplicationViews";
 import './Keeper.css';
 
 export const Keeper = () => (
@@ -15,7 +16,7 @@ export const Keeper = () => (
                   // Use <Route> to 
                     <>
                         <Route render={props => <NavBar {...props} />} />
-                        
+                        <Route render={props = <ApplicationViews {...props} />} />
                     </>
                 )
             } else {

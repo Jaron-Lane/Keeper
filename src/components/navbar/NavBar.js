@@ -11,10 +11,10 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/create">Create</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/todays_goals">Today's Goals</Link>
+                <Link className="navbar__link" to="/todays_habits">Today's Goals</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/all_goals">All Goals</Link>
+                <Link className="navbar__link" to="/all_habits">All Goals</Link>
             </li>
         </ul>
     )
