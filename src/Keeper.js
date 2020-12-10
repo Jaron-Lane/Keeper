@@ -12,6 +12,7 @@ export const Keeper = () => (
           // The user id is saved under the key app_user_id in local Storage. Change below if needed!
             if (localStorage.getItem("app_user_id")) {
                 return (
+                  // Use <Route> to 
                     <>
                         <Route render={props => <NavBar {...props} />} />
                         
