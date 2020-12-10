@@ -4,16 +4,15 @@ import { CreateProvider } from "./create/CreateProvider"
 import { CreateForm } from "./create/CreateForm"
 import { TodaysHabitProvider } from "./todayshabit/TodaysHabitProvider"
 import { TodaysHabitList } from "./todayshabit/TodaysHabitList"
-import { HabitProvider } from "./allhabits/HabitProvider"
-import { HabitList } from "./allhabits/HabitList"
+import { AllHabitProvider } from "./allhabits/AllHabitProvider"
+import { AllHabitList } from "./allhabits/AllHabitList"
 
 
 export const ApplicationViews = () => {
     return (
         <>
-
-            <CreateProvider>
-                {/* Render the create form when http://localhost:3000/create */}
+<h1>This is applicationviews </h1> 
+            {/* <CreateProvider>
                 <Route exact path="/create">
                     <CreateForm />
                 </Route>
@@ -25,11 +24,11 @@ export const ApplicationViews = () => {
                 </Route>
             </TodaysHabitProvider>
 
-            <HabitProvider>
+            <AllHabitProvider>
                 <Route path="/all_habits">
-                    <HabitList />
+                    <AllHabitList />
                 </Route>
-            </HabitProvider>
+            </AllHabitProvider> */}
 
         </>
     )
