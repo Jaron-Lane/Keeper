@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import "./NavBar"
+import "./NavBar.css"
 
 export const NavBar = (props) => {
     return (
@@ -9,10 +9,10 @@ export const NavBar = (props) => {
                 <Link className="navbar__link" to="/create">Create</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/todaysgoals">Today's Goals</Link>
+                <Link className="navbar__link" to="/todays_goals">Today's Goals</Link>
             </li>
             <li className="navbar__item">
-                <Link className="navbar__link" to="/allgoals">All Goals</Link>
+                <Link className="navbar__link" to="/all_goals">All Goals</Link>
             </li>
         </ul>
     )
