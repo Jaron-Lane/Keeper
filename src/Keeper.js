@@ -2,6 +2,7 @@ import React from "react"
 import { Route, Redirect } from "react-router-dom"
 import { Login } from "./components/auth/Login"
 import { Register } from "./components/auth/Register"
+import { NavBar } from "./components/navbar/NavBar";
 import './Keeper.css';
 
 export const Keeper = () => (
@@ -12,7 +13,8 @@ export const Keeper = () => (
             if (localStorage.getItem("app_user_id")) {
                 return (
                     <>
-                        //Components that are rendered when the user is authenticated go inside this React fragment
+                        <Route render={props => <NavBar {...props} />} />
+                        
                     </>
                 )
             } else {
