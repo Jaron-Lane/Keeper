@@ -10,13 +10,25 @@
 
     "habits": [
         {
-
+            "name": "Workout",
+            "time": 35,
+            "userId": 3,
+            "sunday": false,
+            "monday": true,
+            "tuesday": true,
+            "wednesday": false,
+            "thursday": true,
+            "friday": true,
+            "saturday": false,
+            "id": 1
         }
     ],
 
     "completedHabits": [
         {
-            
+            "habitId": 1,
+            "elapsedTime": 37,
+            "date": "thursday"
         }
     ]
 }
