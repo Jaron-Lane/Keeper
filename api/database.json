@@ -1,34 +1,51 @@
 {
-    "users": [
-        {
-            "email": "test@test.com",
-            "password": "test",
-            "name": "Test Testerson",
-            "id": 3
-        }
-    ],
-
-    "habits": [
-        {
-            "name": "Workout",
-            "time": 35,
-            "userId": 3,
-            "sunday": false,
-            "monday": true,
-            "tuesday": true,
-            "wednesday": false,
-            "thursday": true,
-            "friday": true,
-            "saturday": false,
-            "id": 1
-        }
-    ],
-
-    "completedHabits": [
-        {
-            "habitId": 1,
-            "elapsedTime": 37,
-            "date": "thursday"
-        }
-    ]
+  "users": [
+    {
+      "email": "test@test.com",
+      "password": "test",
+      "name": "Test Testerson",
+      "id": 3
+    },
+    {
+      "email": "apple@apple.com",
+      "password": "apple",
+      "name": "apple apple",
+      "id": 4
+    }
+  ],
+  "habits": [
+    {
+      "name": "Workout",
+      "time": 1500,
+      "userId": 3,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": false,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 1
+    },
+    {
+      "name": "Walk",
+      "time": 1000,
+      "userId": 3,
+      "sunday": true,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 2
+    }
+  ],
+  "completedHabits": [
+    {
+      "habitId": 1,
+      "elapsedTime": 37,
+      "date": "2020-12-12T05:00:00.000Z"
+    }
+  ]
 }
