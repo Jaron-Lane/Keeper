@@ -1,18 +1,18 @@
 import React, { useState } from "react"
 
 // Context is exported for any components that might need it 
-export const AllHabitContext = React.createContext()
+export const HabitContext = React.createContext()
 
-export const AllHabitProvider = (props) => {
-    const { allHabits, setAllHabits } = useState([])
+export const HabitProvider = (props) => {
+    const { habits, setHabit } = useState([])
 
-    const getAllHabits = () => {
+    const getHabit = () => {
         return fetch("http://localhost:8088/habits")
             .then(res => res.json())
-            .then(setAllHabits)   
+            .then(setHabit)   
     }
 
-    const addAllHabits = habit => {
+    const addHabit = habit => {
         return fetch("http://localhost:8088/habits", {
             method: "POST",
             headers: {
@@ -20,14 +20,14 @@ export const AllHabitProvider = (props) => {
             },
             body: JSON.stringify(habit)
         })
-            .then(getAllHabits)
+            .then(getHabit)
     }
 
     return (
-        <AllHabitContext.Provider value={{
-            allHabits, addAllHabits, getAllHabits
+        <HabitContext.Provider value={{
+            habits, addHabit, getHabit
         }}>
             {props.children}
-        </AllHabitContext.Provider>
+        </HabitContext.Provider>
     )
 }
