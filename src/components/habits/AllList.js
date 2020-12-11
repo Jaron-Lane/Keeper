@@ -22,7 +22,7 @@ export const AllList = (props) => {
             <h1>All of my Habits</h1>
             <section className="habits">
                 {
-                    habits.map(h => <AllHabitCard key={h.id} />)
+                    habits.map(h => <AllHabitCard key={h.id} habit={h}/>)
                 }
             </section>
         </>
