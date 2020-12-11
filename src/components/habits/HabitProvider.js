@@ -4,14 +4,16 @@ import React, { useState } from "react"
 export const HabitContext = React.createContext()
 
 export const HabitProvider = (props) => {
-    const { habits, setHabit } = useState([])
+    const [habits, setHabit] = useState([])
 
-    const getHabit = () => {
+    const getHabits = () => {
+        console.log(habits)
         return fetch("http://localhost:8088/habits")
-            .then(res => res.json())
-            .then(setHabit)   
+        .then(res => res.json())
+        .then(setHabit)
+        
     }
-
+    
     const addHabit = habit => {
         return fetch("http://localhost:8088/habits", {
             method: "POST",
@@ -20,12 +22,12 @@ export const HabitProvider = (props) => {
             },
             body: JSON.stringify(habit)
         })
-            .then(getHabit)
+        .then(getHabits)
     }
 
     return (
         <HabitContext.Provider value={{
-            habits, addHabit, getHabit
+            habits, addHabit, getHabits
         }}>
             {props.children}
         </HabitContext.Provider>
