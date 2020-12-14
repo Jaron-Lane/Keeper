@@ -39,7 +39,20 @@
       "friday": true,
       "saturday": false,
       "id": 2
-    }
+    },
+    {
+        "name": "Test for False",
+        "time": 1500,
+        "userId": 3,
+        "sunday": true,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "id": 3
+      }
   ],
   "completedHabits": [
     {

@@ -7,7 +7,7 @@ export const HabitProvider = (props) => {
     const [habits, setHabit] = useState([])
 
     const getHabits = () => {
-        console.log(habits)
+        // console.log(habits)
         return fetch("http://localhost:8088/habits")
         .then(res => res.json())
         .then(setHabit)
