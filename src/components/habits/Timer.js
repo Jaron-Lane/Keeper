@@ -14,6 +14,9 @@ export const Timer = () => {
     //   setIsActive(false);
     // }
 
+    // ^^^^ this is a function for a potential reset button 
+
+
     useEffect(() => {
         let interval = null;
         if (isActive) {
@@ -33,15 +36,14 @@ export const Timer = () => {
     }, [isActive, seconds]);
 
     return (
-        <div className="app">
-            <div className="time">
+        <div className="habit__timer">
+            <div className="habit__time">
                 {seconds}s
-      </div>
+            </div>
             <div className="row">
                 <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
                     {isActive ? 'Log' : 'Start'}
                 </button>
-
             </div>
         </div>
     );

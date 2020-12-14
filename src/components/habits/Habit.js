@@ -7,7 +7,7 @@ export const Habit = ({ habit }) => {
         <article className="habit">
             <h3 className="habit__name">{ habit.name }</h3>
             <div className="habit__target">Target Time</div>
-            <div className="habit__stopwatch"><Timer /></div>
+            <Timer />
         </article>
     )
 }
