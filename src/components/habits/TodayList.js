@@ -1,6 +1,6 @@
 import React from "react"
 
-const TodayList = () => {
+export const TodayList = () => {
     
 
     return (
@@ -8,7 +8,7 @@ const TodayList = () => {
             <h1>Today</h1>
             <section>
 
-                <div>Habits To Today List</div>
+                <div>Habits To Do Today List</div>
                 <div>Habits completed Today List</div>
             </section>
         </>
