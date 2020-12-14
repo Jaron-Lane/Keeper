@@ -39,13 +39,27 @@
       "friday": true,
       "saturday": false,
       "id": 2
-    }
+    },
+    {
+        "name": "Test for False",
+        "time": 1500,
+        "userId": 3,
+        "sunday": true,
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false,
+        "id": 3
+      }
   ],
   "completedHabits": [
     {
       "habitId": 1,
       "elapsedTime": 37,
-      "date": "2020-12-12T05:00:00.000Z"
+      "date": "2020-12-12T05:00:00.000Z",
+      "id": 1
     }
   ]
 }

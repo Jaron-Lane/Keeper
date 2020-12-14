@@ -9,20 +9,15 @@ export const AllList = (props) => {
     useEffect(() => {
         console.log("AllList: Initial render before data")
         getHabits()
-        console.log(habits)
+        // console.log(habits)
     }, [])
 
-    useEffect(() => {
-        console.log(habits)
-    }, [habits])
-
-    // console.log(HabitProvider)
     return (
         <>
             <h1>All of my Habits</h1>
             <section className="habits">
                 {
-                    habits.map(h => <AllHabitCard key={h.id} />)
+                    habits.map(h => <AllHabitCard key={h.id} habit={h}/>)
                 }
             </section>
         </>
