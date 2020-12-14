@@ -12,7 +12,7 @@ export const TodayList = (props) => {
     useEffect(() => {
         // console.log("TodayList: Initial render before data")
         getHabits().then(getCompHabits)
-        console.log(habits)
+        // console.log(habits)
     }, [])
 
     // useEffect(() => {
@@ -37,8 +37,6 @@ export const TodayList = (props) => {
                     
                     <h2>Habits Completed Today</h2>
                     <section className="habits__completed">
-                        { console.log(compHabits) }
-                        
                         {
                             compHabits.map(comp => <CompletedHabit key={comp.id} completedHabit={comp} />)
                         }
