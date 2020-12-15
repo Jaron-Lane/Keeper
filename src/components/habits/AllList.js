@@ -4,7 +4,7 @@ import { HabitContext } from "./HabitProvider"
 
 
 export const AllList = (props) => {
-    const {habits, getHabits} = useContext(HabitContext)
+    const {habits, getHabits, deleteHabit} = useContext(HabitContext)
 
     useEffect(() => {
         console.log("AllList: Initial render before data")

@@ -4,7 +4,7 @@ import React, { useState } from "react"
 export const HabitContext = React.createContext()
 
 export const HabitProvider = (props) => {
-    const [habits, setHabit] = useState([])
+    const [habits, setHabit ] = useState([])
 
     const getHabits = () => {
         // console.log(habits)
@@ -25,9 +25,16 @@ export const HabitProvider = (props) => {
         .then(getHabits)
     }
 
+    const deleteHabit = habitId => {
+        return fetch(`http://localhost:8088/habits/${habitId}`, {
+            method: "DELETE"
+        })
+        .then(getHabits)
+    }
+
     return (
         <HabitContext.Provider value={{
-            habits, addHabit, getHabits
+            habits, addHabit, getHabits, deleteHabit
         }}>
             {props.children}
         </HabitContext.Provider>

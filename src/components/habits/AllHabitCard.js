@@ -6,6 +6,10 @@ export const AllHabitCard = ({ habit }) => {
         <article className="habit">
             <h3 className="habit__name">{habit.name}</h3>
             <div className="habit__specs">Habit days and daily times</div>
+            <button className="btn--release" 
+            onClick={() => {
+
+            }}>Delete</button>
         </article>
     )
 }
