@@ -15,19 +15,6 @@
   ],
   "habits": [
     {
-      "name": "Test for False",
-      "time": 1500,
-      "userId": 3,
-      "sunday": true,
-      "monday": false,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 3
-    },
-    {
       "name": "User 4 for tuesday",
       "time": 1500,
       "userId": 4,
@@ -64,20 +51,14 @@
       "thursday": false,
       "friday": false,
       "saturday": false,
-      "id": 6
+      "id": 7
     }
   ],
   "completedHabits": [
     {
-      "habitId": 6,
-      "elapsedTime": 1,
-      "date": "Tue Dec 15 2020 15:35:21 GMT-0600 (Central Standard Time)",
-      "id": 5
-    },
-    {
-      "habitId": 4,
-      "elapsedTime": 2,
-      "date": "Tue Dec 15 2020 19:38:14 GMT-0600 (Central Standard Time)",
+      "habitId": 5,
+      "elapsedTime": 3,
+      "date": "Wed Dec 16 2020 09:12:20 GMT-0600 (Central Standard Time)",
       "id": 6
     }
   ]

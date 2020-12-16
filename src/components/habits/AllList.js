@@ -4,7 +4,7 @@ import { HabitContext } from "./HabitProvider"
 
 
 export const AllList = (props) => {
-    const { habits, getHabits, deleteHabit } = useContext(HabitContext)
+    const { habits, getHabits } = useContext(HabitContext)
 
 
     useEffect(() => {
@@ -21,7 +21,7 @@ export const AllList = (props) => {
                     habits.map(h => {
                         return (
                             <>
-                                <AllHabitCard key={h.id} habit={h} />
+                                <AllHabitCard key={h.id} habit={h} props={props}/>
                             </>
                         )
                     }) 
