@@ -9,11 +9,11 @@ import { CompHabitProvider } from "./completedhabits/CompHabitProvider"
 export const ApplicationViews = () => {
     return (
         <>  
-            {/* <HabitProvider>
+            <HabitProvider>
                 <Route exact path="/create">
                     <HabitForm />
                 </Route>
-            </HabitProvider> */}
+            </HabitProvider>
             <CompHabitProvider>
                 <HabitProvider>
                     <Route path="/todays_habits">
