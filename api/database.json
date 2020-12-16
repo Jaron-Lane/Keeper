@@ -41,57 +41,57 @@
       "id": 2
     },
     {
-        "name": "Test for False",
-        "time": 1500,
-        "userId": 3,
-        "sunday": true,
-        "monday": false,
-        "tuesday": false,
-        "wednesday": false,
-        "thursday": false,
-        "friday": false,
-        "saturday": false,
-        "id": 3
-      },
-      {
-        "name": "User 4 for tuesday",
-        "time": 1500,
-        "userId": 4,
-        "sunday": false,
-        "monday": false,
-        "tuesday": true,
-        "wednesday": false,
-        "thursday": false,
-        "friday": false,
-        "saturday": false,
-        "id": 4
-      },
-      {
-        "name": "User 4 for Wednesday",
-        "time": 1500,
-        "userId": 4,
-        "sunday": false,
-        "monday": false,
-        "tuesday": false,
-        "wednesday": true,
-        "thursday": false,
-        "friday": false,
-        "saturday": false,
-        "id": 5
-      },
-      {
-        "name": "User 4 for tuesday and Wednesday",
-        "time": 1500,
-        "userId": 4,
-        "sunday": false,
-        "monday": false,
-        "tuesday": true,
-        "wednesday": true,
-        "thursday": false,
-        "friday": false,
-        "saturday": false,
-        "id": 6
-      }
+      "name": "Test for False",
+      "time": 1500,
+      "userId": 3,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 3
+    },
+    {
+      "name": "User 4 for tuesday",
+      "time": 1500,
+      "userId": 4,
+      "sunday": false,
+      "monday": false,
+      "tuesday": true,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 4
+    },
+    {
+      "name": "User 4 for Wednesday",
+      "time": 1500,
+      "userId": 4,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": true,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 5
+    },
+    {
+      "name": "User 4 for tuesday and Wednesday",
+      "time": 1500,
+      "userId": 4,
+      "sunday": false,
+      "monday": false,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 6
+    }
   ],
   "completedHabits": [
     {
@@ -111,6 +111,18 @@
       "elapsedTime": 50,
       "date": "Tue Dec 14 2020 11:33:28 GMT-0600 (Central Standard Time)",
       "id": 3
+    },
+    {
+      "habitId": "burrito",
+      "elapsedTime": 2,
+      "date": "Tue Dec 15 2020 15:25:31 GMT-0600 (Central Standard Time)",
+      "id": 4
+    },
+    {
+      "habitId": 6,
+      "elapsedTime": 1,
+      "date": "Tue Dec 15 2020 15:35:21 GMT-0600 (Central Standard Time)",
+      "id": 5
     }
   ]
 }
