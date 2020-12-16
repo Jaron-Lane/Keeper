@@ -4,14 +4,15 @@ import { HabitProvider } from "./habits/HabitProvider"
 import { AllList } from "./habits/AllList"
 import { TodayList } from "./habits/TodayList"
 import { CompHabitProvider } from "./completedhabits/CompHabitProvider"
+import { HabitForm } from "./habits/HabitForm"
 
 
-export const ApplicationViews = () => {
+export const ApplicationViews = (props) => {
     return (
         <>  
             <HabitProvider>
                 <Route exact path="/create">
-                    <HabitForm />
+                    <HabitForm {...props}/>
                 </Route>
             </HabitProvider>
             <CompHabitProvider>

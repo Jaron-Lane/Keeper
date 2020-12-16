@@ -8,8 +8,8 @@ export const Timer = (props) => {
 
     const { addCompHabit } = useContext(CompletedHabitContext)
 
-    const completedDate = Date()
     
+    const completedDate = Date()    
     let timeSubmitted = seconds
     
     const submitHabit = () => {
