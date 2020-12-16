@@ -15,45 +15,6 @@
   ],
   "habits": [
     {
-      "name": "Workout",
-      "time": 1500,
-      "userId": 3,
-      "sunday": false,
-      "monday": true,
-      "tuesday": true,
-      "wednesday": false,
-      "thursday": true,
-      "friday": true,
-      "saturday": false,
-      "id": 1
-    },
-    {
-      "name": "Walk",
-      "time": 1000,
-      "userId": 3,
-      "sunday": true,
-      "monday": true,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": true,
-      "friday": true,
-      "saturday": false,
-      "id": 2
-    },
-    {
-      "name": "Test for False",
-      "time": 1500,
-      "userId": 3,
-      "sunday": true,
-      "monday": false,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 3
-    },
-    {
       "name": "User 4 for tuesday",
       "time": 1500,
       "userId": 4,
@@ -90,39 +51,15 @@
       "thursday": false,
       "friday": false,
       "saturday": false,
-      "id": 6
+      "id": 7
     }
   ],
   "completedHabits": [
     {
-      "habitId": 1,
-      "elapsedTime": 37,
-      "date": "Tue Dec 15 2020 11:33:28 GMT-0600 (Central Standard Time)",
-      "id": 1
-    },
-    {
-      "habitId": 2,
-      "elapsedTime": 50,
-      "date": "Tue Dec 15 2020 11:33:28 GMT-0600 (Central Standard Time)",
-      "id": 2
-    },
-    {
-      "habitId": 2,
-      "elapsedTime": 50,
-      "date": "Tue Dec 14 2020 11:33:28 GMT-0600 (Central Standard Time)",
-      "id": 3
-    },
-    {
-      "habitId": "burrito",
-      "elapsedTime": 2,
-      "date": "Tue Dec 15 2020 15:25:31 GMT-0600 (Central Standard Time)",
-      "id": 4
-    },
-    {
-      "habitId": 6,
-      "elapsedTime": 1,
-      "date": "Tue Dec 15 2020 15:35:21 GMT-0600 (Central Standard Time)",
-      "id": 5
+      "habitId": 5,
+      "elapsedTime": 3,
+      "date": "Wed Dec 16 2020 09:12:20 GMT-0600 (Central Standard Time)",
+      "id": 6
     }
   ]
 }
