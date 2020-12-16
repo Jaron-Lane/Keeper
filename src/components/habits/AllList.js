@@ -4,7 +4,8 @@ import { HabitContext } from "./HabitProvider"
 
 
 export const AllList = (props) => {
-    const {habits, getHabits, deleteHabit} = useContext(HabitContext)
+    const { habits, getHabits, deleteHabit } = useContext(HabitContext)
+
 
     useEffect(() => {
         console.log("AllList: Initial render before data")
@@ -17,8 +18,14 @@ export const AllList = (props) => {
             <h1>All of my Habits</h1>
             <section className="habits">
                 {
-                    habits.map(h => <AllHabitCard key={h.id} habit={h}/>)
-                }
+                    habits.map(h => {
+                        return (
+                            <>
+                                <AllHabitCard key={h.id} habit={h} />
+                            </>
+                        )
+                    }) 
+                    } 
             </section>
         </>
     )

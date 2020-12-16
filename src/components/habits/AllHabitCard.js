@@ -1,15 +1,22 @@
-import React from "react"
+import React, {useContext} from "react"
 import "./AllHabitCard.css"
+import { HabitContext } from "./HabitProvider"
 
-export const AllHabitCard = ({ habit }) => {
+
+export const AllHabitCard = ({ props, habit }) => {
+    const { deleteHabit } = useContext(HabitContext)
+
     return (
         <article className="habit">
             <h3 className="habit__name">{habit.name}</h3>
             <div className="habit__specs">Habit days and daily times</div>
-            <button className="btn--release" 
-            onClick={() => {
-
-            }}>Delete</button>
+            <button className="btn--release"
+                onClick={() => {
+                    deleteHabit(habit.id)
+                    .then(() => {
+                        props.history.push("/all_habits")
+                    })
+                }}>Delete</button>
         </article>
     )
 }
