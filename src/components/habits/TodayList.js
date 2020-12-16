@@ -38,6 +38,8 @@ export const TodayList = (props) => {
     const userId = parseInt(localStorage.getItem('app_user_id'))
     console.log(userId)
 
+    const 
+
     return (
         <>
             <h1>Today's Habits</h1>
@@ -46,7 +48,11 @@ export const TodayList = (props) => {
                     <h2>Habits To Do</h2>
                     <section className="habits__todo">
                         {
-                            habits.filter(habit => habit.userId === userId && habit[today] === true).map(h => <Habit key={h.id} habit={h} />)
+                            habits.filter(habit => habit.userId === userId && habit[today] === true)
+                            .filter(habit => !compHabits.some(ch => ch.habitId === habit.id))
+                                // *NOT* ANY HABIT ID FROM THE COMP HABIT DATABASE THAT EQUALS THE HABIT ID
+                            .map(h => <Habit key={h.id} habit={h} {...props}/>)
+                                // map over each habit in the habits array and get the 
                         }
                     </section>
                 </article>
@@ -59,7 +65,7 @@ export const TodayList = (props) => {
                             compHabits.filter(habit => {
                                 const testDate = new Date(habit.date)
                                 return testDate.getDate() === todaysDate})
-                            .map(habit => <CompletedHabit key={habit.id} completedHabit={habit} />)
+                            .map(todaysHabits => <CompletedHabit key={todaysHabits.id} completedHabit={todaysHabits} />)
                         }
                     </section>
                 </article>

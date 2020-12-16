@@ -1,7 +1,12 @@
-import React, { useRef } from "react"
+import React, { useContext, useRef } from "react"
+import { HabitContext } from "./HabitProvider"
 
-export const HabitForm = () => {
-    const name = useRef(null)
+export const HabitForm = (props) => {
+    const { addHabit } = useContext(HabitContext)
+
+    const name = useRef("")
+    const time = useRef("")
+
 
     let sundayStatus = false;
     let mondayStatus = false;
@@ -10,6 +15,32 @@ export const HabitForm = () => {
     let thursdayStatus = false;
     let fridayStatus = false;
     let saturdayStatus = false;
+
+
+    const makeNewHabit = (props) => {
+        const userId = parseInt(localStorage.getItem('app_user_id'))
+
+        if (name === "" || time === "") {
+            window.alert("Please fill out all forms")
+        }
+
+        else {
+            addHabit({
+            name: name.current.value,
+            time: time.current.value * 60,
+            // multiplying time (coming in as seconds) by 60 for base number of seconds 
+            userId,
+            sunday: sundayStatus,
+            monday: mondayStatus,
+            tuesday: tuesdayStatus,
+            wednesday: wednesdayStatus,
+            thursday: thursdayStatus,
+            friday: fridayStatus,
+            saturday: saturdayStatus,
+        }).then(() => props.history.push("/todays_habits"))
+    }
+    }
+
 
     const sunday = (evt) => {
         console.log(evt)
@@ -45,8 +76,8 @@ export const HabitForm = () => {
         <form className="habitForm">
             <h2>Create A New Habit</h2>
             <fieldset>
-                <label htmlFor="habitTitle">Habit Title</label>
-                <input type="text" id="habitName" ref={name} placeholder="Workout, Read, Walk, etc." />
+                <label htmlFor="habitTitle">Habit Title </label>
+                <input type="text" id="habitName" ref={name} placeholder="Read, Walk, etc." />
             </fieldset>
             <fieldset>
                 <label htmlFor="sunday">Sunday </label>
@@ -85,6 +116,18 @@ export const HabitForm = () => {
                     saturday(evt)
                 }}/>
             </fieldset>
+            <fieldset>
+                <label htmlFor="timeSelect">How much time (in minutes) would you like to spend daily? </label>
+                <input type="text" id="timeSelect" ref={time} placeholder="45, 30, 15, etc."/>
+            </fieldset>
+            <button type="submit"
+                onClick={evt => {
+                    evt.preventDefault() // Prevent browser from submitting the form
+                    makeNewHabit(props)
+                }}
+                className="btn btn-primary">
+                Create New Habit
+            </button>
         </form>
     )
 }
