@@ -38,7 +38,6 @@ export const TodayList = (props) => {
     const userId = parseInt(localStorage.getItem('app_user_id'))
     console.log(userId)
 
-    const 
 
     return (
         <>

@@ -7,8 +7,8 @@ export const CompHabitProvider = (props) => {
     const [compHabits, setCompHabit] = useState([])
 
     const getCompHabits = () => {
-        // console.log(compHabits)
-        return fetch("http://localhost:8088/completedHabits")
+        // Adding /?_expand=habit to create nested data. Makes displaying the completedhabit.name from CompletedHabit easier!
+        return fetch("http://localhost:8088/completedHabits/?_expand=habit")
         .then(res => res.json())
         .then(setCompHabit)
         
