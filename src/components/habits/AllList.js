@@ -13,19 +13,17 @@ export const AllList = (props) => {
         // console.log(habits)
     }, [])
 
+    // sets userId equal to the app_user_id from local storage. Also, converting it to an int from a string
+    const userId = parseInt(localStorage.getItem('app_user_id'))
+
     return (
         <>
             <h1>All of my Habits</h1>
             <section className="habits">
                 {
-                    habits.map(h => {
-                        return (
-                            <>
-                                <AllHabitCard key={h.id} habit={h} props={props}/>
-                            </>
-                        )
-                    }) 
-                    } 
+                    // filter over all the habits and get the ones where the habit's userId matches the user's id
+                    habits.filter(habit => habit.userId === userId).map(habit => <AllHabitCard key={habit.id} habit={habit} props={props}/>
+                    )} 
             </section>
         </>
     )

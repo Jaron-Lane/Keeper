@@ -11,7 +11,7 @@ export const ApplicationViews = (props) => {
     return (
         <>  
             <HabitProvider>
-                <Route exact path="/create">
+                <Route exact path="/">
                     <HabitForm {...props}/>
                 </Route>
             </HabitProvider>

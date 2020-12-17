@@ -43,31 +43,31 @@ export const HabitForm = (props) => {
 
 
     const sunday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return sundayStatus = evt.target.checked
     }
     const monday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return mondayStatus = evt.target.checked
     }
     const tuesday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return tuesdayStatus = evt.target.checked
     }
     const wednesday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return wednesdayStatus = evt.target.checked
     }
     const thursday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return thursdayStatus = evt.target.checked
     }
     const friday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return fridayStatus = evt.target.checked
     }
     const saturday = (evt) => {
-        console.log(evt)
+        // console.log(evt)
         return saturdayStatus = evt.target.checked
     }
 

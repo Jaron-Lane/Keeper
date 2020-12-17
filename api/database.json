@@ -5,19 +5,52 @@
       "password": "test",
       "name": "Test Testerson",
       "id": 3
-    },
-    {
-      "email": "apple@apple.com",
-      "password": "apple",
-      "name": "apple apple",
-      "id": 4
     }
   ],
   "habits": [
     {
-      "name": "User 4 for Wednesday",
-      "time": 1500,
-      "userId": 4,
+      "name": "sunday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 26
+    },
+    {
+      "name": "monday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": true,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 27
+    },
+    {
+      "name": "tuesday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": true,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 28
+    },
+    {
+      "name": "wednesday test",
+      "time": 120,
+      "userId": 3,
       "sunday": false,
       "monday": false,
       "tuesday": false,
@@ -25,157 +58,54 @@
       "thursday": false,
       "friday": false,
       "saturday": false,
-      "id": 5
+      "id": 29
     },
     {
-      "name": "User 4 for tuesday and Wednesday",
-      "time": 1500,
-      "userId": 4,
+      "name": "thursday test",
+      "time": 120,
+      "userId": 3,
       "sunday": false,
       "monday": false,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 7
-    },
-    {
-      "name": "Test",
-      "time": "5",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": true,
+      "tuesday": false,
+      "wednesday": false,
       "thursday": true,
       "friday": false,
       "saturday": false,
-      "id": 9
+      "id": 30
     },
     {
-      "name": "apple",
-      "time": "10",
-      "userId": 4,
+      "name": "friday test",
+      "time": 120,
+      "userId": 3,
       "sunday": false,
       "monday": false,
       "tuesday": false,
-      "wednesday": true,
+      "wednesday": false,
       "thursday": false,
       "friday": true,
+      "saturday": false,
+      "id": 31
+    },
+    {
+      "name": "saturday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
       "saturday": true,
-      "id": 10
-    },
-    {
-      "name": "banana",
-      "time": "12",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 11
-    },
-    {
-      "name": "Carrot",
-      "time": "13",
-      "userId": 4,
-      "sunday": true,
-      "monday": true,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 12
-    },
-    {
-      "name": "donut",
-      "time": "14",
-      "userId": 4,
-      "sunday": true,
-      "monday": true,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 13
-    },
-    {
-      "name": "Celery",
-      "time": "15",
-      "userId": 4,
-      "sunday": true,
-      "monday": true,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 14
-    },
-    {
-      "name": "cherry",
-      "time": "30",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": true,
-      "friday": false,
-      "saturday": false,
-      "id": 15
-    },
-    {
-      "name": "2nd Test",
-      "time": "31",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": false,
-      "friday": true,
-      "saturday": false,
-      "id": 16
-    },
-    {
-      "name": "zesty",
-      "time": 2220,
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 17
+      "id": 32
     }
   ],
   "completedHabits": [
     {
-      "habitId": 5,
-      "elapsedTime": 3,
-      "date": "Wed Dec 16 2020 09:12:20 GMT-0600 (Central Standard Time)",
-      "id": 6
-    },
-    {
-      "habitId": 7,
-      "elapsedTime": 1,
-      "date": "Wed Dec 16 2020 14:06:01 GMT-0600 (Central Standard Time)",
-      "id": 7
-    },
-    {
-      "habitId": 16,
-      "elapsedTime": 3,
-      "date": "Wed Dec 16 2020 15:21:37 GMT-0600 (Central Standard Time)",
-      "id": 8
+      "habitId": 27,
+      "elapsedTime": 2,
+      "date": "Thu Dec 17 2020 10:11:23 GMT-0600 (Central Standard Time)",
+      "id": 4
     }
   ]
 }
