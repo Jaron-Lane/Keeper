@@ -11,80 +11,60 @@
       "password": "apple",
       "name": "apple apple",
       "id": 4
+    },
+    {
+      "email": "gmail@yahoo.com",
+      "password": "pits",
+      "name": "tofu pindergrass",
+      "id": 5
+    },
+    {
+      "email": "user1@user1.com",
+      "password": "user1",
+      "name": "User 1",
+      "id": 6
     }
   ],
   "habits": [
     {
-      "name": "zesty",
-      "time": 2220,
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 17
-    },
-    {
-      "name": "apple",
-      "time": 900,
-      "userId": 4,
-      "sunday": false,
+      "name": "Handstand Pushups",
+      "time": 540,
+      "userId": 5,
+      "sunday": true,
       "monday": true,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": true,
-      "friday": true,
-      "saturday": true,
-      "id": 18
-    },
-    {
-      "name": "Banana",
-      "time": 900,
-      "userId": 4,
-      "sunday": false,
-      "monday": true,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": true,
-      "friday": false,
-      "saturday": false,
-      "id": 19
-    },
-    {
-      "name": "Dragonfruit",
-      "time": 420,
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
       "tuesday": false,
+      "wednesday": false,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 22
+    },
+    {
+      "name": "Read",
+      "time": 1800,
+      "userId": 5,
+      "sunday": true,
+      "monday": true,
+      "tuesday": true,
       "wednesday": true,
       "thursday": true,
       "friday": true,
-      "saturday": true,
-      "id": 20
+      "saturday": false,
+      "id": 23
     }
   ],
   "completedHabits": [
     {
-      "habitId": 17,
-      "elapsedTime": 6,
-      "date": "Wed Dec 16 2020 16:11:37 GMT-0600 (Central Standard Time)",
-      "id": 9
+      "habitId": 22,
+      "elapsedTime": 530,
+      "date": "2020-12-16T21:30:06+0000",
+      "id": 1
     },
     {
-      "habitId": 18,
-      "elapsedTime": 61,
-      "date": "Wed Dec 16 2020 18:54:33 GMT-0600 (Central Standard Time)",
-      "id": 10
-    },
-    {
-      "habitId": 19,
-      "elapsedTime": 94,
-      "date": "Wed Dec 16 2020 20:19:28 GMT-0600 (Central Standard Time)",
-      "id": 11
+      "habitId": 23,
+      "elapsedTime": 69,
+      "date": "Thu Dec 17 2020 08:05:15 GMT-0600 (Central Standard Time)",
+      "id": 2
     }
   ]
 }

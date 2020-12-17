@@ -13,15 +13,17 @@ export const AllList = (props) => {
         // console.log(habits)
     }, [])
 
+    const userId = parseInt(localStorage.getItem('app_user_id'))
+
     return (
         <>
             <h1>All of my Habits</h1>
             <section className="habits">
                 {
-                    habits.map(h => {
+                    habits.filter(habit => habit.userId === userId).map(habit => {
                         return (
                             <>
-                                <AllHabitCard key={h.id} habit={h} props={props}/>
+                                <AllHabitCard key={habit.id} habit={habit} props={props}/>
                             </>
                         )
                     }) 
