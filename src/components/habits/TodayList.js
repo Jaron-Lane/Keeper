@@ -19,12 +19,10 @@ export const TodayList = (props) => {
     weekday[4] = "Thursday";
     weekday[5] = "Friday";
     weekday[6] = "Saturday";
+    var today = weekday[d.getDay()].toLowerCase();
 
     console.log(d)
-
-    var today = weekday[d.getDay()].toLowerCase();
     console.log("todays day is", today)
-
     console.log('todays date is the', todaysDate)
 
 
@@ -51,7 +49,7 @@ export const TodayList = (props) => {
                             .filter(habit => !compHabits.some(ch => ch.habitId === habit.id))
                                 // *NOT* ANY HABIT ID FROM THE COMP HABIT DATABASE THAT EQUALS THE HABIT ID
                             .map(h => <Habit key={h.id} habit={h} {...props}/>)
-                                // map over each habit in the habits array and get the 
+                                // map over and get each habit in the habits array 
                         }
                     </section>
                 </article>
