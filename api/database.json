@@ -52,6 +52,19 @@
       "friday": false,
       "saturday": false,
       "id": 19
+    },
+    {
+      "name": "Dragonfruit",
+      "time": 420,
+      "userId": 4,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 20
     }
   ],
   "completedHabits": [
@@ -66,6 +79,12 @@
       "elapsedTime": 61,
       "date": "Wed Dec 16 2020 18:54:33 GMT-0600 (Central Standard Time)",
       "id": 10
+    },
+    {
+      "habitId": 19,
+      "elapsedTime": 94,
+      "date": "Wed Dec 16 2020 20:19:28 GMT-0600 (Central Standard Time)",
+      "id": 11
     }
   ]
 }
