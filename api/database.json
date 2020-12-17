@@ -5,6 +5,18 @@
       "password": "test",
       "name": "Test Testerson",
       "id": 3
+    },
+    {
+      "email": "jake@jake.com",
+      "password": "jake",
+      "name": "Jake Butler",
+      "id": 4
+    },
+    {
+      "email": "jisie@jisie.com",
+      "password": "jisie",
+      "name": "Jisie David",
+      "id": 5
     }
   ],
   "habits": [
@@ -98,14 +110,52 @@
       "friday": false,
       "saturday": true,
       "id": 32
+    },
+    {
+      "name": "Read",
+      "time": 2700,
+      "userId": 5,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": true,
+      "saturday": true,
+      "id": 36
+    },
+    {
+      "name": "Test for today",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": true,
+      "friday": false,
+      "saturday": false,
+      "id": 37
     }
   ],
   "completedHabits": [
     {
       "habitId": 27,
       "elapsedTime": 2,
-      "date": "Thu Dec 17 2020 10:11:23 GMT-0600 (Central Standard Time)",
+      "date": "Wed Dec 16 2020 10:11:23 GMT-0600 (Central Standard Time)",
       "id": 4
+    },
+    {
+      "habitId": 30,
+      "elapsedTime": 3,
+      "date": "Thu Dec 17 2020 15:16:32 GMT-0600 (Central Standard Time)",
+      "id": 5
+    },
+    {
+      "habitId": 37,
+      "elapsedTime": 5,
+      "date": "Thu Dec 17 2020 15:19:13 GMT-0600 (Central Standard Time)",
+      "id": 6
     }
   ]
 }
