@@ -63,7 +63,7 @@ export const TodayList = (props) => {
                         {
                             compHabits.filter(habit => {
                                 const testDate = new Date(habit.date)
-                                return testDate.getDate() === todaysDate})
+                                return testDate.getDate() === todaysDate && habit.habit.userId === userId})
                             .map(todaysHabits => <CompletedHabit key={todaysHabits.id} completedHabit={todaysHabits} />)
                         }
                     </section>
