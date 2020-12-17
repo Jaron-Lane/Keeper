@@ -15,71 +15,6 @@
   ],
   "habits": [
     {
-      "name": "apple",
-      "time": "10",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": false,
-      "wednesday": true,
-      "thursday": false,
-      "friday": true,
-      "saturday": true,
-      "id": 10
-    },
-    {
-      "name": "banana",
-      "time": "12",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 11
-    },
-    {
-      "name": "Carrot",
-      "time": "13",
-      "userId": 4,
-      "sunday": true,
-      "monday": true,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 12
-    },
-    {
-      "name": "Celery",
-      "time": "15",
-      "userId": 4,
-      "sunday": true,
-      "monday": true,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": false,
-      "saturday": false,
-      "id": 14
-    },
-    {
-      "name": "cherry",
-      "time": "30",
-      "userId": 4,
-      "sunday": false,
-      "monday": false,
-      "tuesday": true,
-      "wednesday": true,
-      "thursday": true,
-      "friday": false,
-      "saturday": false,
-      "id": 15
-    },
-    {
       "name": "zesty",
       "time": 2220,
       "userId": 4,
@@ -91,6 +26,32 @@
       "friday": false,
       "saturday": false,
       "id": 17
+    },
+    {
+      "name": "apple",
+      "time": 900,
+      "userId": 4,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 18
+    },
+    {
+      "name": "Banana",
+      "time": 900,
+      "userId": 4,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": false,
+      "saturday": false,
+      "id": 19
     }
   ],
   "completedHabits": [
@@ -101,9 +62,9 @@
       "id": 9
     },
     {
-      "habitId": 15,
-      "elapsedTime": 10,
-      "date": "Wed Dec 16 2020 16:24:32 GMT-0600 (Central Standard Time)",
+      "habitId": 18,
+      "elapsedTime": 61,
+      "date": "Wed Dec 16 2020 18:54:33 GMT-0600 (Central Standard Time)",
       "id": 10
     }
   ]
