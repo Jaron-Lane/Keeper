@@ -22,14 +22,8 @@ export const AllList = (props) => {
             <section className="habits">
                 {
                     // filter over all the habits and get the ones where the habit's userId matches the user's id
-                    habits.filter(habit => habit.userId === userId).map(habit => {
-                        return (
-                            <>
-                                <AllHabitCard key={habit.id} habit={habit} props={props}/>
-                            </>
-                        )
-                    }) 
-                    } 
+                    habits.filter(habit => habit.userId === userId).map(habit => <AllHabitCard key={habit.id} habit={habit} props={props}/>
+                    )} 
             </section>
         </>
     )

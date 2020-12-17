@@ -5,66 +5,107 @@
       "password": "test",
       "name": "Test Testerson",
       "id": 3
-    },
-    {
-      "email": "apple@apple.com",
-      "password": "apple",
-      "name": "apple apple",
-      "id": 4
-    },
-    {
-      "email": "gmail@yahoo.com",
-      "password": "pits",
-      "name": "tofu pindergrass",
-      "id": 5
-    },
-    {
-      "email": "user1@user1.com",
-      "password": "user1",
-      "name": "User 1",
-      "id": 6
     }
   ],
   "habits": [
     {
-      "name": "Handstand Pushups",
-      "time": 540,
-      "userId": 5,
+      "name": "sunday test",
+      "time": 120,
+      "userId": 3,
       "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 26
+    },
+    {
+      "name": "monday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
       "monday": true,
       "tuesday": false,
       "wednesday": false,
-      "thursday": true,
-      "friday": true,
+      "thursday": false,
+      "friday": false,
       "saturday": false,
-      "id": 22
+      "id": 27
     },
     {
-      "name": "Read",
-      "time": 1800,
-      "userId": 5,
-      "sunday": true,
-      "monday": true,
+      "name": "tuesday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
       "tuesday": true,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 28
+    },
+    {
+      "name": "wednesday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
       "wednesday": true,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 29
+    },
+    {
+      "name": "thursday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
       "thursday": true,
+      "friday": false,
+      "saturday": false,
+      "id": 30
+    },
+    {
+      "name": "friday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
       "friday": true,
       "saturday": false,
-      "id": 23
+      "id": 31
+    },
+    {
+      "name": "saturday test",
+      "time": 120,
+      "userId": 3,
+      "sunday": false,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": true,
+      "id": 32
     }
   ],
   "completedHabits": [
     {
-      "habitId": 22,
-      "elapsedTime": 530,
-      "date": "2020-12-16T21:30:06+0000",
-      "id": 1
-    },
-    {
-      "habitId": 23,
-      "elapsedTime": 69,
-      "date": "Thu Dec 17 2020 08:05:15 GMT-0600 (Central Standard Time)",
-      "id": 2
+      "habitId": 27,
+      "elapsedTime": 2,
+      "date": "Thu Dec 17 2020 10:11:23 GMT-0600 (Central Standard Time)",
+      "id": 4
     }
   ]
 }
