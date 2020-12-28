@@ -6,7 +6,7 @@ export const Timer = (props) => {
     const [seconds, setSeconds] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const { addCompHabit } = useContext(CompletedHabitContext)
-    const completedDate = Date()    
+    const completedDate = new Date().toLocaleDateString("en-US")  
     let timeSubmitted = seconds
     
     const submitHabit = () => {
@@ -29,6 +29,8 @@ export const Timer = (props) => {
 
         return `${getMinutes}:${getSeconds}`
     }
+
+    console.log("completing the habit", completedDate)
 
     useEffect(() => {
         let interval = null;

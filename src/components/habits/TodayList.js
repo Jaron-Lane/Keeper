@@ -9,6 +9,8 @@ export const TodayList = (props) => {
     const { habits, getHabits } = useContext(HabitContext)
     const { compHabits, getCompHabits } = useContext(CompletedHabitContext)
 
+    const completedDate = new Date().toLocaleDateString("en-US") 
+
     var d = new Date();
     var todaysDate = d.getDate();
     var weekday = new Array(7);
@@ -24,13 +26,18 @@ export const TodayList = (props) => {
     console.log(d)
     console.log("todays day is", today)
     console.log('todays date is the', todaysDate)
+    console.log()
 
 
     useEffect(() => {
         // console.log("TodayList: Initial render before data")
-        getHabits().then(getCompHabits)
+        getHabits()
         // console.log(habits)
     }, [])
+
+    useEffect(() => {
+        getCompHabits()
+    }, [habits])
 
     // Get user Id from local storage. Filter habits by user Id from local storage.
     const userId = parseInt(localStorage.getItem('app_user_id'))
@@ -46,7 +53,7 @@ export const TodayList = (props) => {
                     <section className="habits__todo">
                         {
                             habits.filter(habit => habit.userId === userId && habit[today] === true)
-                            .filter(habit => !compHabits.some(ch => ch.habitId === habit.id))
+                            .filter(habit => !compHabits.some(ch => ch.habitId === habit.id && ch.date === completedDate))
                                 // *NOT* ANY HABIT ID FROM THE COMP HABIT DATABASE THAT EQUALS THE HABIT ID
                             .map(h => <Habit key={h.id} habit={h} {...props}/>)
                                 // map over and get each habit in the habits array 

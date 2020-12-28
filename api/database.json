@@ -17,6 +17,12 @@
       "password": "jisie",
       "name": "Jisie David",
       "id": 5
+    },
+    {
+      "email": "tradd@tradd.com",
+      "password": "tradd",
+      "name": "tradd tiller",
+      "id": 6
     }
   ],
   "habits": [
@@ -112,19 +118,6 @@
       "id": 32
     },
     {
-      "name": "Read",
-      "time": 2700,
-      "userId": 5,
-      "sunday": true,
-      "monday": false,
-      "tuesday": false,
-      "wednesday": false,
-      "thursday": false,
-      "friday": true,
-      "saturday": true,
-      "id": 36
-    },
-    {
       "name": "Test for today",
       "time": 120,
       "userId": 3,
@@ -136,26 +129,72 @@
       "friday": false,
       "saturday": false,
       "id": 37
+    },
+    {
+      "name": "Fight my stepdad",
+      "time": 900,
+      "userId": 6,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 39
+    },
+    {
+      "name": "Walk",
+      "time": 900,
+      "userId": 5,
+      "sunday": true,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 40
+    },
+    {
+      "name": "workout",
+      "time": 2700,
+      "userId": 5,
+      "sunday": false,
+      "monday": true,
+      "tuesday": false,
+      "wednesday": true,
+      "thursday": false,
+      "friday": true,
+      "saturday": false,
+      "id": 41
+    },
+    {
+      "name": "testing for tuesday",
+      "time": 60,
+      "userId": 5,
+      "sunday": false,
+      "monday": false,
+      "tuesday": true,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 42
     }
   ],
   "completedHabits": [
     {
-      "habitId": 27,
-      "elapsedTime": 2,
-      "date": "Wed Dec 16 2020 10:11:23 GMT-0600 (Central Standard Time)",
-      "id": 4
+      "habitId": 40,
+      "elapsedTime": 6,
+      "date": "12/21/2020",
+      "id": 1
     },
     {
-      "habitId": 30,
-      "elapsedTime": 3,
-      "date": "Thu Dec 17 2020 15:16:32 GMT-0600 (Central Standard Time)",
-      "id": 5
-    },
-    {
-      "habitId": 37,
-      "elapsedTime": 5,
-      "date": "Thu Dec 17 2020 15:19:13 GMT-0600 (Central Standard Time)",
-      "id": 6
+      "habitId": 42,
+      "elapsedTime": 1,
+      "date": "12/22/2020",
+      "id": 2
     }
   ]
 }
