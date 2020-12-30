@@ -5,13 +5,14 @@ import { AllList } from "./habits/AllList"
 import { TodayList } from "./habits/TodayList"
 import { CompHabitProvider } from "./completedhabits/CompHabitProvider"
 import { HabitForm } from "./habits/HabitForm"
+import { HabitDetail } from "./habits/HabitDetail"
 
 
 export const ApplicationViews = (props) => {
     return (
         <>  
             <HabitProvider>
-                <Route exact path="/">
+                <Route path="/create">
                     <HabitForm {...props}/>
                 </Route>
             </HabitProvider>
@@ -23,9 +24,13 @@ export const ApplicationViews = (props) => {
                 </HabitProvider>
             </CompHabitProvider>
             <HabitProvider>
-                <Route path="/all_habits" render={
+                <Route exact path="/" render={
                     props => <AllList {...props}/>
                 } />   
+
+                <Route path="/:habitId(\d+)" render={
+                    props => <HabitDetail {...props} />
+                } />
             </HabitProvider>
         </>
     )

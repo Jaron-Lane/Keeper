@@ -1,6 +1,8 @@
 import React, { useContext, useEffect } from "react"
+import { Link } from "react-router-dom"
 import { AllHabitCard } from "./AllHabitCard"
 import { HabitContext } from "./HabitProvider"
+import "./AllHabitCard.css"
 
 
 export const AllList = (props) => {
@@ -22,8 +24,12 @@ export const AllList = (props) => {
             <section className="habits">
                 {
                     // filter over all the habits and get the ones where the habit's userId matches the user's id
-                    habits.filter(habit => habit.userId === userId).map(habit => <AllHabitCard key={habit.id} habit={habit} props={props}/>
-                    )} 
+                    habits.filter(habit => habit.userId === userId).map(habit => {
+                        return <Link key={habit.id} to={`/${habit.id}`} props={props}>
+                            <h2>{habit.name}</h2>
+                        </Link>
+                    }
+                    )}
             </section>
         </>
     )

@@ -37,7 +37,7 @@ export const HabitForm = (props) => {
             thursday: thursdayStatus,
             friday: fridayStatus,
             saturday: saturdayStatus,
-        }).then(() => props.history.push("/todays_habits"))
+        }).then(() => props.history.push("/"))
     }
     }
 
