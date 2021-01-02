@@ -20,12 +20,38 @@
             setHabit(habit)
         }, [habits])
 
+
+
         return (
             <section className="details">
                 <h3 className="details__name">{habit.name}</h3>
                 <div className="details__container">
                     <div className="details__time">{habit.time / 60} minutes a day</div>
-                    <div className="details__schedule">{habit.monday}</div>
+                    <div className="details__schedule">
+                        <ul>
+                            {
+                                habit.sunday ? <li>Sunday</li> : ""
+                            }
+                            {
+                                habit.monday ? <li>Monday</li> : ""
+                            }
+                            {
+                                habit.tuesday ? <li>Tuesday</li> : ""
+                            }
+                            {
+                                habit.wednesday ? <li>Wednesday</li> : ""
+                            }
+                            {
+                                habit.thursday ? <li>Thursday</li> : ""
+                            }
+                            {
+                                habit.friday ? <li>Friday</li> : ""
+                            }
+                            {
+                                habit.saturday ? <li>Saturday</li> : ""
+                            }
+                        </ul>
+                    </div>
                 </div>
                 <button className="btn--release"
                 onClick={() => {

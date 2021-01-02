@@ -23,6 +23,12 @@
       "password": "tradd",
       "name": "tradd tiller",
       "id": 6
+    },
+    {
+      "email": "jaron@jaron.com",
+      "password": "jaron",
+      "name": "Jaron Lane",
+      "id": 7
     }
   ],
   "habits": [
@@ -181,6 +187,110 @@
       "friday": false,
       "saturday": false,
       "id": 42
+    },
+    {
+      "name": "Read",
+      "time": 2700,
+      "userId": 7,
+      "sunday": true,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 43
+    },
+    {
+      "name": "Workout ",
+      "time": 2100,
+      "userId": 7,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": false,
+      "saturday": false,
+      "id": 44
+    },
+    {
+      "name": "Practice Spanish",
+      "time": 2100,
+      "userId": 7,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 45
+    },
+    {
+      "name": "Meditate",
+      "time": 1500,
+      "userId": 7,
+      "sunday": true,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 46
+    },
+    {
+      "name": "Songwriting",
+      "time": 3600,
+      "userId": 7,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 47
+    },
+    {
+      "name": "Piano",
+      "time": 1800,
+      "userId": 7,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 48
+    },
+    {
+      "name": "Guitar Solos",
+      "time": 1800,
+      "userId": 7,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 49
+    },
+    {
+      "name": "Transcribing",
+      "time": 1800,
+      "userId": 7,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 50
     }
   ],
   "completedHabits": [

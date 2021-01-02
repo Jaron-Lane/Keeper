@@ -1,8 +1,6 @@
 import React, { useContext, useEffect } from "react"
 import { Link } from "react-router-dom"
-import { AllHabitCard } from "./AllHabitCard"
 import { HabitContext } from "./HabitProvider"
-import "./AllHabitCard.css"
 
 
 export const AllList = (props) => {

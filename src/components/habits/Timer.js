@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { CompletedHabitContext } from "../completedhabits/CompHabitProvider"
-import "./Timer.css"
+import "./Habit.css"
 
 export const Timer = (props) => {
     const [seconds, setSeconds] = useState(0);

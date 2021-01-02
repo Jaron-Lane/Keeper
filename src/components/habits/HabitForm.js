@@ -74,12 +74,14 @@ export const HabitForm = (props) => {
 
     return (
         <form className="habitForm">
-            <h2>Create A New Habit</h2>
-            <fieldset>
-                <label htmlFor="habitTitle">Habit Title </label>
+            <div className="habitForm__title">
+                <h2>Create A New Habit</h2>
+            </div>
+            <fieldset className="habitForm__name">
+                <label htmlFor="habitName">Habit Name: </label>
                 <input type="text" id="habitName" ref={name} placeholder="Read, Walk, etc." />
             </fieldset>
-            <fieldset>
+            <fieldset className="habitForm__checkbox">
                 <label htmlFor="sunday">Sunday </label>
                 <input type="checkbox" id="sundaySelect" 
                 onChange={evt => {
@@ -116,7 +118,7 @@ export const HabitForm = (props) => {
                     saturday(evt)
                 }}/>
             </fieldset>
-            <fieldset>
+            <fieldset className="habitForm__minutes">
                 <label htmlFor="timeSelect">How much time (in minutes) would you like to spend daily? </label>
                 <input type="text" id="timeSelect" ref={time} placeholder="45, 30, 15, etc."/>
             </fieldset>
@@ -125,8 +127,8 @@ export const HabitForm = (props) => {
                     evt.preventDefault() // Prevent browser from submitting the form
                     makeNewHabit(props)
                 }}
-                className="btn btn-primary">
-                Create New Habit
+                className="habitForm__btn">
+                Create!
             </button>
         </form>
     )
