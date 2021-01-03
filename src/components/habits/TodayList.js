@@ -3,6 +3,7 @@ import { CompletedHabitContext } from "../completedhabits/CompHabitProvider"
 import { HabitContext } from "./HabitProvider"
 import { Habit } from "./Habit"
 import { CompletedHabit } from "../completedhabits/CompletedHabit"
+import "./Habit.css"
 
 
 export const TodayList = (props) => {
