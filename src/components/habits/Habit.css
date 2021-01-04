@@ -2,7 +2,11 @@
 
 .habit__container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+
+.habits {
+    width: 85%;
 }
 
 #habit__card__id {
