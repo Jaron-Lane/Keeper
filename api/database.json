@@ -187,6 +187,45 @@
       "friday": true,
       "saturday": false,
       "id": 50
+    },
+    {
+      "name": "Read",
+      "time": 2700,
+      "userId": 3,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": true,
+      "saturday": true,
+      "id": 51
+    },
+    {
+      "name": "Meditate",
+      "time": 900,
+      "userId": 3,
+      "sunday": true,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true,
+      "id": 53
+    },
+    {
+      "name": "Workout ",
+      "time": 2100,
+      "userId": 3,
+      "sunday": false,
+      "monday": true,
+      "tuesday": true,
+      "wednesday": false,
+      "thursday": true,
+      "friday": true,
+      "saturday": false,
+      "id": 54
     }
   ],
   "completedHabits": [
