@@ -18,17 +18,21 @@ export const AllList = (props) => {
 
     return (
         <>
-            <h1>All of my Habits</h1>
-            <section className="habits">
-                {
-                    // filter over all the habits and get the ones where the habit's userId matches the user's id
-                    habits.filter(habit => habit.userId === userId).map(habit => {
-                        return <Link key={habit.id} to={`/${habit.id}`} props={props}>
-                            <h2>{habit.name}</h2>
-                        </Link>
-                    }
-                    )}
-            </section>
+            <div className="todays__habits">
+                <h1>Library</h1>
+            </div>
+            <div className="allHabit__container">
+                
+                    {
+                        // filter over all the habits and get the ones where the habit's userId matches the user's id
+                        habits.filter(habit => habit.userId === userId).map(habit => {
+                            return <Link className="allHabit__cards" key={habit.id} to={`/${habit.id}`} props={props}>
+                                <h2>{habit.name}</h2>
+                            </Link>
+                        }
+                        )}
+                
+            </div>
         </>
     )
 }

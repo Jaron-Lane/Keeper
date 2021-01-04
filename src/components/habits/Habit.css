@@ -57,3 +57,19 @@ h2 {
     color: rgb(99, 94, 94);
     font-size: 14px;
 }
+
+.allHabit__cards {
+    
+    border-radius: 7%;
+    margin: 1.5em;
+    padding: 3em;
+    background-color: white;
+    filter: drop-shadow(0 0 0.35rem grey);
+}
+
+.allHabit__container {
+    margin: 0 10em 0 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
