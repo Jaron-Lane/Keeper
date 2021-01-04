@@ -1,6 +1,7 @@
+import { Button } from "react-bootstrap";
 import React, { useState, useEffect, useContext } from "react";
 import { CompletedHabitContext } from "../completedhabits/CompHabitProvider"
-import "./Habit.css"
+import "./Timer.css"
 
 export const Timer = (props) => {
     const [seconds, setSeconds] = useState(0);
@@ -50,15 +51,17 @@ export const Timer = (props) => {
     // console.log(props)
     return (
         <div className="habit__timer">
-            <div className="habit__time">
-                {timeDisplay()}
+            <div className="habit__time__container">
+                <p className="habit__time">
+                    {timeDisplay()}
+                </p>
             </div>
             <div className="start__pause">
                 <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
                     {isActive ? 'Pause' : 'Start'}
                 </button>
-                <button className="submit" onClick={submitHabit}>
-                    Submit Time
+                <button className="button submit" onClick={submitHabit}>
+                    Submit
                 </button>
             </div>
         </div>

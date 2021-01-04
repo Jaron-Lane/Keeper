@@ -291,6 +291,45 @@
       "friday": true,
       "saturday": false,
       "id": 50
+    },
+    {
+      "name": "Test for today",
+      "time": 1860,
+      "userId": 7,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": true,
+      "id": 51
+    },
+    {
+      "name": "Test 2",
+      "time": 300,
+      "userId": 7,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 52
+    },
+    {
+      "name": "Test 3",
+      "time": 900,
+      "userId": 7,
+      "sunday": true,
+      "monday": false,
+      "tuesday": false,
+      "wednesday": false,
+      "thursday": false,
+      "friday": false,
+      "saturday": false,
+      "id": 53
     }
   ],
   "completedHabits": [
@@ -305,6 +344,12 @@
       "elapsedTime": 23,
       "date": "1/3/2021",
       "id": 2
+    },
+    {
+      "habitId": 53,
+      "elapsedTime": 2,
+      "date": "1/3/2021",
+      "id": 3
     }
   ]
 }
