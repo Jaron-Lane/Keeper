@@ -3,6 +3,7 @@ import { CompletedHabitContext } from "../completedhabits/CompHabitProvider"
 import { HabitContext } from "./HabitProvider"
 import { Habit } from "./Habit"
 import { CompletedHabit } from "../completedhabits/CompletedHabit"
+import "./Habit.css"
 
 
 export const TodayList = (props) => {
@@ -46,11 +47,15 @@ export const TodayList = (props) => {
 
     return (
         <>
-            <h1>Today's Habits</h1>
-            <section className="habit__container">
+            <div className="todays__habits">
+                <h1>Today's Habits</h1>
+            </div>
+            <div className="habit__container">
                 <article className="habits">
+                <div className="todays__habits__sub">
                     <h2>Habits To Do</h2>
-                    <section className="habits__todo">
+                </div>
+                    <div className="habits__todo">
                         {
                             habits.filter(habit => habit.userId === userId && habit[today] === true)
                             .filter(habit => !compHabits.some(ch => ch.habitId === habit.id && ch.date === completedDate))
@@ -58,22 +63,24 @@ export const TodayList = (props) => {
                             .map(h => <Habit key={h.id} habit={h} {...props}/>)
                                 // map over and get each habit in the habits array 
                         }
-                    </section>
+                    </div>
                 </article>
+                
 
                 <article className="completed__habits">
-
-                    <h2>Habits Completed Today</h2>
-                    <section className="habits__completed">
+                    <div className="todays__habits__sub">
+                        <h2>Habits Completed Today</h2>
+                    </div>
+                    <div className="habits__completed">
                         {
                             compHabits.filter(habit => {
                                 const testDate = new Date(habit.date)
                                 return testDate.getDate() === todaysDate && habit.habit.userId === userId})
                             .map(todaysHabits => <CompletedHabit key={todaysHabits.id} completedHabit={todaysHabits} />)
                         }
-                    </section>
+                    </div>
                 </article>
-            </section>
+            </div>
         </>
     )
 }

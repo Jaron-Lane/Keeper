@@ -1,0 +1,26 @@
+.habit__timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    margin: 1.3em 0.25em 0 0.25em;
+}
+
+.habit__time {
+    font-size: 65px;
+    color: #9ecccc;
+}
+
+.habit__time__container {
+    border: solid;
+    width: 200px;
+    height: 200px;
+    background: #454545;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

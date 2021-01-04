@@ -1,10 +1,37 @@
 .navbar {
     display: flex;
-    flex-wrap: nowrap;
+    flex-flow: row nowrap;
     justify-content: left;
 }
 
 .navbar__item {
-    flex-basis: 20%;
+    /* flex-basis: 20%; */
     list-style-type: none;
+    margin: 0 3em 0 3em;
+}
+
+.navBar__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #EAE9EB
+}
+
+.logo_title{
+    margin-left: 1.5em;
+    font-size: 25px;
+}
+
+a:link {
+    text-decoration: none;
+    color:#454545
+}
+
+a:visited {
+    text-decoration: none;
+    color:#454545
+}
+
+a:hover {
+    color: #9ecccc;
 }

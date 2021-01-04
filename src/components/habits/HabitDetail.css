@@ -1,0 +1,37 @@
+.details__container {
+    margin: 8em 10em 5em 7em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    border-radius: 7%;
+    padding: 1em;
+    background-color: white;
+    filter: drop-shadow(0 0 0.35rem grey);
+    width: 300px;
+    align-items: center;
+}
+
+.details__name {
+    text-align: center;
+    font-size: 27px;
+    margin-bottom: .5em;
+}
+
+.details__schedule {
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.details__time {
+    text-align: center;
+}
+
+.detail__delete {
+    padding: .75em;
+    margin: 1em;
+}
