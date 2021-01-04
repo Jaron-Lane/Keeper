@@ -1,45 +1,8 @@
 
-
-
 .Keeper {
   text-align: center;
 }
 
-.habitForm {
-  display: grid;
-  grid-template-columns: repeat(5, 20%);
-  grid-template-rows: repeat(5, 20%);
-  border: solid;
-}
 
-.habitForm__title {
-  grid-column: 3;
-  grid-row: 1;
-  padding: 7px;
-}
-
-.habitForm__name {
-  grid-column: 3;
-  grid-row: 2;
-  padding: 7px;
-}
-
-.habitForm__checkbox {
-  grid-column: 3;
-  grid-row: 3;
-  padding: 7px;
-}
-
-.habitForm__minutes {
-  grid-column: 3;
-  grid-row: 5;
-  padding: 7px;
-}
-
-.habitForm__btn {
-  grid-column: 3;
-  grid-row: 6;
-  padding: 7px;
-}
 
 
