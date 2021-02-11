@@ -48,7 +48,6 @@ export const Timer = (props) => {
         return () => clearInterval(interval);
     }, [isActive, seconds]);
 
-    // console.log(props)
     return (
         <div className="habit__timer">
             <div className="habit__time__container">
